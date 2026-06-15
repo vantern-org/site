@@ -1,6 +1,5 @@
 import backArrow from './back-arrow.svg';
 import leaf from './leaf.svg';
-import pride from './pride.svg';
 
 export default function Kitzal() {
   return (
@@ -11,11 +10,6 @@ export default function Kitzal() {
           Return
         </a>
         <div className="relative inline-flex items-center justify-center">
-          <img
-            src={pride}
-            alt="Pride"
-            className="pointer-events-none absolute -right-10 -top-14 z-0 h-12 w-12 rounded-lg motion-safe:animate-[popup-soft_1s_both]"
-          />
           <img
             src={leaf}
             alt=""
