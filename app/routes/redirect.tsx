@@ -15,6 +15,7 @@ const REDIRECTS: Record<string, string> = {
     '/bot/invite': 'https://discord.com/oauth2/authorize?client_id=1494686224508522579&permissions=4504974218751054&scope=bot%20applications.commands',
     '/bot/github': 'https://github.com/duck-organization/quest-bot.git',
     '/bot/docs': 'https://docs.duckorg.com/',
+    '/kitzal': 'https://kitzal.com/',
     ...Object.fromEntries(
         Object.entries(MEMBERS).map(([slug, username]) => [
             `/github/member/${slug}`,
