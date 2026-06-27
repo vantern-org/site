@@ -2,6 +2,13 @@ const logo = '/logoBanner.svg'
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
 
+export function meta() {
+  return [
+    { title: "Coming Soon | Duck Organization" },
+    { name: "description", content: "Something exciting is on the way." },
+  ];
+}
+
 export default function ComingSoon() {
   return (
     <div className="relative flex flex-col flex-1 overflow-hidden">

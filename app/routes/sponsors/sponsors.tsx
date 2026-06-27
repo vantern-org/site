@@ -1,6 +1,13 @@
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
 
+export function meta() {
+  return [
+    { title: "Sponsors | Duck Organization" },
+    { name: "description", content: "The people and organizations that support Duck Organization." },
+  ];
+}
+
 export default function Sponsors() {
   return (
     <div className="relative flex flex-col flex-1 overflow-hidden">

@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 
 export function meta() {
-  return [{ title: "Quest Bot Feedback" }];
+  return [
+    { title: "Quest Bot Feedback | Duck Organization" },
+    { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
+  ];
 }
 
 export default function QuestBotFeedback() {

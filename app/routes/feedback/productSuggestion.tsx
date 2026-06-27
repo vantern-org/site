@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 
 export function meta() {
-  return [{ title: "Product/Service Suggestion" }];
+  return [
+    { title: "Product Suggestion | Duck Organization" },
+    { name: "description", content: "Suggest a new product or service for Duck Organization." },
+  ];
 }
 
 export default function IdeaSuggestion() {
