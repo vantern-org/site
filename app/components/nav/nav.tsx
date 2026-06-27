@@ -4,8 +4,8 @@ import './nav.css';
 
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Docs', to: '/bot/docs' },
     { label: 'Sponsors', to: '/sponsors' },
+    { label: 'GitHub', to: '/github' },
     { label: 'Kitzal', to: '/kitzal' },
     { label: 'Bot Invite', to: '/bot/invite' },
 ];

@@ -8,10 +8,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import { CookieBanner } from "./components/cookieBanner/cookieBanner";
-
 export function loader() {
-  return { cfAnalyticsToken: process.env.CF_ANALYTICS_TOKEN ?? null };
+  return {};
 }
 
 export const links: Route.LinksFunction = () => [
@@ -37,13 +35,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function App({ loaderData }: Route.ComponentProps) {
-  return (
-    <>
-      <Outlet />
-      <CookieBanner cfToken={loaderData.cfAnalyticsToken} />
-    </>
-  );
+export default function App() {
+  return <Outlet />;
 }
 
 export { ErrorBoundary } from "./routes/error";

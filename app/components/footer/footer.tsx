@@ -3,8 +3,9 @@ import './footer.css';
 
 const links = [
     { label: 'Home', to: '/' },
+    { label: 'GitHub', to: '/github' },
+    { label: 'Kitzal', to: '/kitzal' },
     { label: 'Sponsors', to: '/sponsors' },
-    { label: 'Privacy Policy', to: '/legal/privacy-policy' },
 ];
 
 export function Footer() {
@@ -16,12 +17,6 @@ export function Footer() {
                         {label}
                     </Link>
                 ))}
-                <button
-                    className="footerLink"
-                    onClick={() => window.dispatchEvent(new Event('show-cookie-banner'))}
-                >
-                    Cookie Settings
-                </button>
             </div>
             <p className="footerCopy">© 2026 Duck Organization. All rights reserved.</p>
         </footer>
