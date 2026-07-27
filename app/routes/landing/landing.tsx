@@ -14,7 +14,7 @@ export function Landing() {
       <div className="relative z-10 flex flex-col items-center justify-center flex-1 gap-4">
         <img src={logo} alt="Logo" />
         <div className="flex flex-row gap-4">
-          <Button variant="primary" onClick={() => window.open('https://duckorg.statuspage.io/', '_blank')}>
+          <Button variant="primary" onClick={() => window.open('https://vantern.statuspage.io/', '_blank')}>
             Status
           </Button>
           <Button variant="secondary" onClick={() => navigate('/discord')}>
