@@ -4,18 +4,19 @@ const MEMBERS: Record<string, string> = {
     unbravechimp: 'unbravechimp',
     tom: 'twatson',
     jvr: 'jvr2022',
+    andrei: 'andr3i1010',
+    mralien: 'MrAlien7893',
     kat: 'kat-11-11',
 };
 
 const REDIRECTS: Record<string, string> = {
     '/discord': 'https://discord.gg/F4HYE8frK2',
-    '/github': 'https://github.com/duck-organization',
-    '/github/questbot': 'https://github.com/duck-organization/questbot.git',
-    '/github/duck-site': 'https://github.com/duck-organization/duck-site.git',
+    '/github': 'https://github.com/vantern-org',
+    '/github/questbot': 'https://github.com/vantern-org/questbot.git',
+    '/github/site': 'https://github.com/vantern-org/site.git',
     '/bot/invite': 'https://discord.com/oauth2/authorize?client_id=1494686224508522579&permissions=4504974218751054&scope=bot%20applications.commands',
-    '/bot/github': 'https://github.com/duck-organization/quest-bot.git',
+    '/bot/github': 'https://github.com/vantern-org/questbot.git',
     '/bot/docs': 'https://docs.duckorg.com/',
-    '/kitzal': 'https://kitzal.com/',
     ...Object.fromEntries(
         Object.entries(MEMBERS).map(([slug, username]) => [
             `/github/member/${slug}`,

@@ -6,7 +6,6 @@ const links = [
     { label: 'Home', to: '/' },
     { label: 'Sponsors', to: '/sponsors' },
     { label: 'GitHub', to: '/github' },
-    { label: 'Kitzal', to: '/kitzal' },
     { label: 'Bot Invite', to: '/bot/invite' },
 ];
 

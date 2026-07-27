@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export function meta() {
   return [
-    { title: "Quest Bot Feedback | Duck Organization" },
+    { title: "Quest Bot Feedback | Vantern" },
     { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
   ];
 }

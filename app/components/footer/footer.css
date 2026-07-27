@@ -27,7 +27,7 @@
 }
 
 .footerLink:hover {
-    color: var(--color-neutral-500);
+    color: var(--color-white);
 }
 
 .footerCopy {

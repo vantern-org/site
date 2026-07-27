@@ -3,9 +3,9 @@ import { Landing } from "./landing/landing";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Duck Organization" },
-    { property: "og:image", content: "https://duckorg.com/largeDuckBanner.png" },
-    { name: "description", content: "The one and only Duck Organization." },
+    { title: "Vantern" },
+    { property: "og:image", content: "https://vantern.org/LargeVanternBanner.png" },
+    { name: "description", content: "FOSS organization, creating open-source software for others." },
   ];
 }
 

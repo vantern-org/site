@@ -16,14 +16,14 @@
 
 .navLink:hover,
 .navLink.active {
-    color: var(--color-neutral-800);
+    color: var(--color-white);
 }
 
 .navUnderline {
     position: absolute;
     bottom: 0;
     height: 2px;
-    background-color: var(--color-neutral-800);
+    background-color: var(--color-white);
     border-radius: 9999px;
     pointer-events: none;
     transition: left 200ms cubic-bezier(0.4, 0, 0.2, 1),

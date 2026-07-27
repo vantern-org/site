@@ -4,7 +4,6 @@ import './footer.css';
 const links = [
     { label: 'Home', to: '/' },
     { label: 'GitHub', to: '/github' },
-    { label: 'Kitzal', to: '/kitzal' },
     { label: 'Sponsors', to: '/sponsors' },
 ];
 
@@ -18,7 +17,7 @@ export function Footer() {
                     </Link>
                 ))}
             </div>
-            <p className="footerCopy">© 2026 Duck Organization. All rights reserved.</p>
+            <p className="footerCopy">© 2026 Vantern. All rights reserved.</p>
         </footer>
     );
 }

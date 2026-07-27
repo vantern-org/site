@@ -4,7 +4,7 @@ import { Footer } from "~/components/footer/footer";
 
 export function meta() {
   return [
-    { title: "Coming Soon | Duck Organization" },
+    { title: "Coming Soon | Vantern" },
     { name: "description", content: "Something exciting is on the way." },
   ];
 }
@@ -17,7 +17,7 @@ export default function ComingSoon() {
       </header>
       <div className="relative z-10 flex flex-col items-center justify-center flex-1 gap-4">
         <img src={logo} alt="Logo" />
-        <h1 className="text-md text-center text-neutral-500">Coming Soon</h1>
+        <h1 className="text-md text-center text-neutral-300">Coming Soon</h1>
       </div>
       <div className="mt-auto justify-end">
         <Footer />

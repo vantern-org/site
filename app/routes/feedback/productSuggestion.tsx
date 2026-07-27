@@ -2,8 +2,8 @@ import { useEffect } from "react";
 
 export function meta() {
   return [
-    { title: "Product Suggestion | Duck Organization" },
-    { name: "description", content: "Suggest a new product or service for Duck Organization." },
+    { title: "Product Suggestion | Vantern" },
+    { name: "description", content: "Suggest a new product or service for Vantern." },
   ];
 }
 

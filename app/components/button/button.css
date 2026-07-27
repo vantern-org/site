@@ -1,9 +1,9 @@
 .buttonPrimary {
-    background-color: var(--color-neutral-800);
+    background-color: var(--color-white);
     width: fit-content;
     border-radius: 9999px;
     padding: 0.5rem 1.25rem;
-    color: white;
+    color: var(--color-neutral-900);
     font-weight: 500;
     font-size: 0.875rem;
     border: 1.5px solid transparent;
@@ -13,23 +13,23 @@
 }
 
 .buttonPrimary:hover {
-    background-color: var(--color-neutral-700);
+    background-color: var(--color-neutral-200);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .buttonPrimary:active {
-    background-color: var(--color-neutral-900);
+    background-color: var(--color-neutral-300);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .buttonPrimary:focus-visible {
-    outline: 2px solid var(--color-neutral-600);
+    outline: 2px solid var(--color-neutral-300);
     outline-offset: 2px;
 }
 
 .buttonPrimary:disabled {
-    background-color: var(--color-neutral-300);
-    color: var(--color-neutral-500);
+    background-color: var(--color-neutral-600);
+    color: var(--color-neutral-400);
     box-shadow: none;
     cursor: not-allowed;
 }
@@ -39,30 +39,30 @@
     width: fit-content;
     border-radius: 9999px;
     padding: 0.5rem 1.25rem;
-    color: var(--color-neutral-700);
+    color: var(--color-white);
     font-weight: 500;
     font-size: 0.875rem;
-    border: 1.5px solid var(--color-neutral-300);
+    border: 1.5px solid var(--color-neutral-500);
     cursor: pointer;
     transition: background-color 150ms, border-color 150ms;
 }
 
 .buttonSecondary:hover {
-    background-color: var(--color-neutral-100);
-    border-color: var(--color-neutral-400);
+    background-color: var(--color-slate-700);
+    border-color: var(--color-neutral-300);
 }
 
 .buttonSecondary:active {
-    background-color: var(--color-neutral-200);
+    background-color: var(--color-slate-600);
 }
 
 .buttonSecondary:focus-visible {
-    outline: 2px solid var(--color-neutral-600);
+    outline: 2px solid var(--color-neutral-300);
     outline-offset: 2px;
 }
 
 .buttonSecondary:disabled {
-    color: var(--color-neutral-400);
-    border-color: var(--color-neutral-200);
+    color: var(--color-neutral-500);
+    border-color: var(--color-neutral-700);
     cursor: not-allowed;
 }

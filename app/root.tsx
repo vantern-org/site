@@ -29,7 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src="https://duckorg.statuspage.io/embed/script.js" />
+        <script src="https://vantern.statuspage.io/embed/script.js" />
       </body>
     </html>
   );
