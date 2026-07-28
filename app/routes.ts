@@ -6,7 +6,7 @@ export default [
         route("*", "routes/redirect.tsx", { id: "redirect-bot" }),
     ]),
     ...prefix("feedback", [
-        route("feedback", "routes/feedback/QuestBotFeedback.tsx"),
+        route("questbot", "routes/feedback/QuestBotFeedback.tsx"),
         route("deletion", "routes/feedback/DeletionSurvey.tsx"),
     ]),
     ...prefix("github", [
