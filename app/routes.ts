@@ -6,8 +6,8 @@ export default [
         route("*", "routes/redirect.tsx", { id: "redirect-bot" }),
     ]),
     ...prefix("feedback", [
-        route("products", "routes/feedback/productSuggestion.tsx"),
-        route("questbot", "routes/feedback/QuestBotFeedback.tsx"),
+        route("feedback", "routes/feedback/QuestBotFeedback.tsx"),
+        route("deletion", "routes/feedback/DeletionSurvey.tsx"),
     ]),
     ...prefix("github", [
         route("*", "routes/redirect.tsx", { id: "redirect-github-wildcard" }),

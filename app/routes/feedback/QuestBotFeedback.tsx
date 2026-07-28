@@ -7,7 +7,7 @@ export function meta() {
   ];
 }
 
-export default function QuestBotFeedback() {
+export default function IdeaSuggestion() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
@@ -20,7 +20,7 @@ export default function QuestBotFeedback() {
 
   return (
     <iframe
-      data-tally-src="https://tally.so/r/xXRprr?transparentBackground=1"
+      data-tally-src="https://tally.so/r/ZjXNKv"
       width="100%"
       height="100%"
       title="Quest Bot Feedback"

@@ -2,12 +2,12 @@ import { useEffect } from "react";
 
 export function meta() {
   return [
-    { title: "Product Suggestion | Vantern" },
-    { name: "description", content: "Suggest a new product or service for Vantern." },
+    { title: "Quest Bot Feedback | Vantern" },
+    { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
   ];
 }
 
-export default function IdeaSuggestion() {
+export default function QuestBotFeedback() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://tally.so/widgets/embed.js";
@@ -20,10 +20,10 @@ export default function IdeaSuggestion() {
 
   return (
     <iframe
-      data-tally-src="https://tally.so/r/A74LGB?transparentBackground=1"
+      data-tally-src="https://tally.so/r/xXRprr"
       width="100%"
       height="100%"
-      title="Product/Service Suggestion"
+      title="Quest Bot Feedback"
       style={{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0, border: 0, margin: 0 }}
     />
   );
