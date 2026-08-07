@@ -1,3 +1,7 @@
+// Vantern's Site
+// Copyright(C) 2026 Vantern
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 const logo = '/logoBanner.svg'
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";

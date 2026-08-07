@@ -1,3 +1,7 @@
+// Vantern's Site
+// Copyright(C) 2026 Vantern
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import { isRouteErrorResponse, useNavigate } from "react-router";
 import { useEffect } from "react";
 import type { Route } from "./+types/home";
