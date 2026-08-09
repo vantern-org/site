@@ -27,8 +27,8 @@ export default function V13() {
 
   useEffect(() => {
     const tick = () => {
-      // 1786356000 is the unix timestamp for 2026-08-10 at 10:00 (UTC), 12pm in NL which is when we plan to release v1.3
-      const remaining = 1786356000 * 1000 - Date.now();
+      // 1786442400 is the unix timestamp for 2026-08-11 at 10:00 (UTC), 12pm in NL which is when we plan to release v1.3
+      const remaining = 1786442400 * 1000 - Date.now();
       setCountdown(
         remaining > 0 ? `Check back in ${ms(remaining, { long: true })}` : "Out now",
       );
