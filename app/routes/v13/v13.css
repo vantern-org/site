@@ -1,0 +1,60 @@
+/*
+ * Vantern's Site
+ * Copyright(C) 2026 Vantern
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+ /* easings from https://easings.net/ */
+
+@keyframes v13FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes v13Up {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, -5rem);
+    }
+
+    50% {
+        transform: translate(-10rem, -5rem);
+    }
+
+    75% {
+        transform: translate(-10rem, -10rem);
+    }
+
+    100% {
+        transform: translate(0, -10rem);
+    }
+}
+
+.v13Stage {
+    animation: v13Up 2000ms cubic-bezier(0.76, 0, 0.24, 1) 3800ms both;
+}
+
+.v13Title {
+    animation: v13FadeIn 1800ms cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .v13Stage,
+    .v13Title {
+        animation: none;
+    }
+
+    .v13Stage {
+        transform: translate(0, -10rem);
+    }
+}

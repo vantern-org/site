@@ -14,9 +14,6 @@ importers:
       '@react-router/serve':
         specifier: 7.14.0
         version: 7.14.0(react-router@7.14.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(typescript@5.9.3)
-      asciiground:
-        specifier: ^1.4.0
-        version: 1.4.0
       isbot:
         specifier: ^5.1.36
         version: 5.1.40
@@ -879,10 +876,6 @@ packages:
 
   array-flatten@1.1.1:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
-
-  asciiground@1.4.0:
-    resolution: {integrity: sha512-DuL5C3aojoK52FJxRW70ZVi74ipremNu8Oivx7nTiwJoCtsC8vp0p6yuQjLizmkayqJumJ1Y4diNL+63WJvn/g==}
-    engines: {node: '>=18.0.0'}
 
   astring@1.9.0:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
@@ -2720,8 +2713,6 @@ snapshots:
   arg@5.0.2: {}
 
   array-flatten@1.1.1: {}
-
-  asciiground@1.4.0: {}
 
   astring@1.9.0: {}
 
