@@ -15,6 +15,7 @@ const MEMBERS: Record<string, string> = {
 
 const REDIRECTS: Record<string, string> = {
     '/discord': 'https://discord.gg/F4HYE8frK2',
+    '/dc': 'https://discord.gg/F4HYE8frK2',
     '/github': 'https://github.com/vantern-org',
     '/github/questbot': 'https://github.com/vantern-org/questbot.git',
     '/github/site': 'https://github.com/vantern-org/site.git',
