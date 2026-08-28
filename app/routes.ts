@@ -20,6 +20,7 @@ export default [
     route("github", "routes/redirect.tsx", { id: "redirect-github" }),
     route("sponsors", "routes/sponsors/sponsors.tsx"),
     route("discord", "routes/redirect.tsx", { id: "redirect-discord" }),
+    route("dc", "routes/redirect.tsx", { id: "redirect-dc" }),
     route("v1.3", "routes/v13/v13.tsx"),
     route("*", "routes/$.tsx"),
 ] satisfies RouteConfig;
