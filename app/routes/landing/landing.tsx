@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { useNavigate } from "react-router";
-const logo = '/logoBanner.svg'
+const logo = '/logo.svg'
 import { Button } from "~/components/button/button";
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
