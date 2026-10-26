@@ -5,6 +5,7 @@
 import { redirect } from 'react-router';
 
 const MEMBERS: Record<string, string> = {
+    eamon: 'eamonwatson',
     unbravechimp: 'unbravechimp',
     tom: 'twatson',
     jvr: 'jvr2022',
