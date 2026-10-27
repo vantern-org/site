@@ -10,7 +10,7 @@ const links = [
     { label: 'Home', to: '/' },
     { label: 'Sponsors', to: '/sponsors' },
     { label: 'GitHub', to: '/github' },
-    { label: 'Bot Invite', to: '/bot/invite' },
+    { label: 'Quest', to: '/bot/invite' },
 ];
 
 type Rect = { left: number; width: number };

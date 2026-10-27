@@ -5,11 +5,13 @@
 const logo = '/logo.svg'
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
+import { ogImage } from "~/meta";
 
 export function meta() {
   return [
     { title: "Coming Soon | Vantern" },
     { name: "description", content: "Something exciting is on the way." },
+    ...ogImage,
   ];
 }
 

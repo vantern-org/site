@@ -5,87 +5,35 @@
  */
 
 @import "tailwindcss";
+@import "./brand.css";
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Plus Jakarta Sans Variable';
+  src: url('/fonts/plus-jakarta-sans-variable.woff2') format('woff2');
+  font-weight: 200 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-variable-italic.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Plus Jakarta Sans Variable';
+  src: url('/fonts/plus-jakarta-sans-variable-italic.woff2') format('woff2');
+  font-weight: 200 800;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: 'JetBrains Mono Variable';
+  src: url('/fonts/jetbrains-mono-variable.woff2') format('woff2');
+  font-weight: 100 800;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-light-italic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inria Serif';
-  src: url('/fonts/inria-serif-bold-italic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ClimateCrisis';
-  src: url('/fonts/ClimateCrisis.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
 body {
-  @apply bg-slate-800
+  @apply bg-vantern-800
 }
 
 @keyframes popup-soft {

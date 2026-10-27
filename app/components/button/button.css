@@ -54,12 +54,12 @@
 }
 
 .buttonSecondary:hover {
-    background-color: var(--color-slate-700);
+    background-color: var(--color-vantern-700);
     border-color: var(--color-neutral-300);
 }
 
 .buttonSecondary:active {
-    background-color: var(--color-slate-600);
+    background-color: var(--color-vantern-600);
 }
 
 .buttonSecondary:focus-visible {

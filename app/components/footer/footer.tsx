@@ -9,6 +9,7 @@ const links = [
     { label: 'Home', to: '/' },
     { label: 'GitHub', to: '/github' },
     { label: 'Sponsors', to: '/sponsors' },
+    { label: 'Brand', to: '/brand' },
 ];
 
 export function Footer() {
@@ -21,7 +22,7 @@ export function Footer() {
                     </Link>
                 ))}
             </div>
-            <p className="footerCopy">© 2026 Vantern. All rights reserved.</p>
+            <p className="footerCopy">© 2026 Vantern</p>
         </footer>
     );
 }
