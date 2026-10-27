@@ -17,12 +17,14 @@ export function meta() {
 export default function Sponsors() {
   return (
     <div className="relative flex flex-col flex-1 overflow-hidden">
-      <header className="relative z-10 flex flex-col items-center pt-6 gap-4">
-        <Nav />
-        <h1 className="text-h1 text-center text-white pt-8">Sponsors</h1>
-      </header>
-      <div className="relative z-10 flex flex-col items-center justify-center pt-8 gap-4 text-xl text-neutral-300 hover:text-white">
-        <a href="https://jvr2022.tech" target="_blank">Jvr2022</a>
+      <div className="flex flex-col min-h-svh">
+        <header className="relative z-10 flex flex-col items-center pt-6 gap-4">
+          <Nav />
+          <h1 className="text-h1 text-center text-white pt-8">Sponsors</h1>
+        </header>
+        <div className="relative z-10 flex flex-col items-center justify-center pt-8 gap-4 text-xl text-neutral-300 hover:text-white">
+          <a href="https://jvr2022.tech" target="_blank">Jvr2022</a>
+        </div>
       </div>
       <div className="mt-auto justify-end">
         <Footer />

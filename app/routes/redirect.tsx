@@ -22,7 +22,6 @@ const REDIRECTS: Record<string, string> = {
     '/github/site': 'https://github.com/vantern-org/site.git',
     '/bot/invite': 'https://discord.com/oauth2/authorize?client_id=1494686224508522579&permissions=4504974218751054&scope=bot%20applications.commands',
     '/bot/github': 'https://github.com/vantern-org/questbot.git',
-    '/bot/docs': 'https://docs.duckorg.com/',
     ...Object.fromEntries(
         Object.entries(MEMBERS).map(([slug, username]) => [
             `/github/member/${slug}`,
