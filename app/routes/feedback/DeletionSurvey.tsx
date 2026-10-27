@@ -3,11 +3,13 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { useEffect } from "react";
+import { ogImage } from "~/meta";
 
 export function meta() {
   return [
     { title: "Quest Bot Feedback | Vantern" },
     { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
+    ...ogImage,
   ];
 }
 
