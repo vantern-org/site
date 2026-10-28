@@ -35,9 +35,9 @@ importers:
       react-router:
         specifier: 7.14.0
         version: 7.14.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      simple-icons:
-        specifier: ^16.28.0
-        version: 16.28.0
+      stacked-alpha-video:
+        specifier: 1.0.10
+        version: 1.0.10
     devDependencies:
       '@mdx-js/rollup':
         specifier: ^3.1.1
@@ -1804,10 +1804,6 @@ packages:
     resolution: {integrity: sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==}
     engines: {node: '>= 0.4'}
 
-  simple-icons@16.28.0:
-    resolution: {integrity: sha512-sQPR5AtK/ijRjou7zw7mlLp08oB6FH7i0lOy5XJ2zp9mJs/yejgiOn7KvQoe2q4YJIx6VmgUSW5AOefebPt5kg==}
-    engines: {node: '>=0.12.18'}
-
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -1825,6 +1821,9 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
+
+  stacked-alpha-video@1.0.10:
+    resolution: {integrity: sha512-FdBFKJu/+kinUMTkpELYwvx2ARXDi9GOfvN7KEMajIiNmkBJzEK2h37QSTTPzee1QXBiYssoDW7NdfTxHXYygA==}
 
   statuses@2.0.2:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
@@ -4036,8 +4035,6 @@ snapshots:
       side-channel-map: 1.0.1
       side-channel-weakmap: 1.0.2
 
-  simple-icons@16.28.0: {}
-
   source-map-js@1.2.1: {}
 
   source-map-support@0.5.21:
@@ -4050,6 +4047,8 @@ snapshots:
   source-map@0.7.6: {}
 
   space-separated-tokens@2.0.2: {}
+
+  stacked-alpha-video@1.0.10: {}
 
   statuses@2.0.2: {}
 
