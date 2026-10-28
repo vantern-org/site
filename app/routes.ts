@@ -21,6 +21,5 @@ export default [
     route("brand", "routes/brand/brand.tsx"),
     route("discord", "routes/redirect.tsx", { id: "redirect-discord" }),
     route("dc", "routes/redirect.tsx", { id: "redirect-dc" }),
-    route("v1.3", "routes/v13/v13.tsx"),
     route("*", "routes/$.tsx"),
 ] satisfies RouteConfig;
