@@ -87,6 +87,11 @@
     color: var(--color-vantern-600);
 }
 
+.storyLink .storyWord {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .heroLine {
         opacity: 1;

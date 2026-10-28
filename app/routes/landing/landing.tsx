@@ -6,7 +6,7 @@ import { useEffect, useRef, useState, type RefObject } from "react";
 import { animate, stagger } from "animejs";
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
-import { prefersReducedMotion } from "~/a11y";
+import { focusRing, prefersReducedMotion } from "~/a11y";
 import "./landing.css";
 
 declare module "react" {
@@ -17,10 +17,23 @@ declare module "react" {
   }
 }
 
-const storyText = [
-  "Vantern is a small team of developers and a security researcher. Most of what we build is open source, because software is better when anyone can read it, use it, and improve it.",
-  "We keep the team small and the work open by default, built with care and made to respect the people who use it.",
+type StorySegment = string | { text: string; href: string };
+
+const storyText: StorySegment[][] = [
+  ["Vantern is a small team of developers and a ",
+  { text: "security researcher", href: "https://jvr2022.tech"},
+  "."
+  ],
+  ["Most of what we build is open source, because software is better when anyone can read it, use it, and improve it."],
+  ["We keep the team small and the work open by default, built with care and made to respect the people who use it."],
 ];
+
+function StoryWords({ text, href }: { text: string; href?: string }) {
+  const words = text.match(/\s*\S+\s*/g)?.map((word, i) => (
+    <span key={i} className="storyWord">{word}</span>
+  ));
+  return href ? <a href={href} className={`storyLink ${focusRing}`}>{words}</a> : words;
+}
 
 function useScrollFrame<T extends HTMLElement>(ref: RefObject<T | null>, setup: (el: T) => () => void) {
   useEffect(() => {
@@ -69,10 +82,10 @@ function Story() {
   return (
     <section ref={sectionRef} className="story">
       <div className="storyInner">
-        {storyText.map(line => (
-          <p key={line} className="storyLine">
-            {line.split(" ").map((word, i) => (
-              <span key={i} className="storyWord">{word} </span>
+        {storyText.map((line, i) => (
+          <p key={i} className="storyLine">
+            {line.map((segment, j) => (
+              <StoryWords key={j} {...(typeof segment === "string" ? { text: segment } : segment)} />
             ))}
           </p>
         ))}
