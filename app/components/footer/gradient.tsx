@@ -54,11 +54,12 @@ export function Gradient() {
 
     useEffect(() => {
         const band = bandRef.current;
-        if (!band) return;
+        const svg = band?.querySelector('svg');
+        if (!band || !svg) return;
         const measure = () => {
             const h = band.offsetHeight || 1;
             const left = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
-            band.style.transform = `scaleY(${Math.max(0, Math.min(1, (h - left) / h))})`;
+            svg.style.height = `${Math.max(0, Math.min(1, (h - left) / h)) * 100}%`;
         };
         measure();
         window.addEventListener('scroll', measure, { passive: true });
