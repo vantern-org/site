@@ -18,7 +18,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "7.14.0",
-    "simple-icons": "^16.28.0"
+    "stacked-alpha-video": "1.0.10"
   },
   "devDependencies": {
     "@mdx-js/rollup": "^3.1.1",
