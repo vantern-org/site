@@ -15,7 +15,7 @@ const columns: FooterLink[][] = [
     [
         { label: 'Discord', to: '/discord' },
         { label: 'GitHub', to: '/github' },
-        { label: 'Sponsors', to: '/sponsors' },
+        { label: 'Sponsor', to: '/sponsor' },
     ],
     [
         { label: 'Home', to: '/' },

@@ -8,7 +8,6 @@ import './nav.css';
 
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Sponsors', to: '/sponsors' },
     { label: 'GitHub', to: '/github' },
     { label: 'Quest', to: '/bot/invite' },
 ];

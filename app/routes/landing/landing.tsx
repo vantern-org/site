@@ -32,7 +32,7 @@ function StoryWords({ text, href }: { text: string; href?: string }) {
   const words = text.match(/\s*\S+\s*/g)?.map((word, i) => (
     <span key={i} className="storyWord">{word}</span>
   ));
-  return href ? <a href={href} className={`storyLink ${focusRing}`}>{words}</a> : words;
+  return href ? <a href={href} target="_blank" rel="noreferrer" className={`storyLink ${focusRing}`}>{words}</a> : words;
 }
 
 function useScrollFrame<T extends HTMLElement>(ref: RefObject<T | null>, setup: (el: T) => () => void) {
