@@ -12,6 +12,10 @@
     padding-bottom: var(--footer-gradient);
 }
 
+.footerPlain {
+    padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
 .footerTop {
     display: flex;
     justify-content: space-between;

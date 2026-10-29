@@ -2,6 +2,7 @@
 // Copyright(C) 2026 Vantern
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { ArrowUpIcon, ArrowUpRightIcon } from 'lucide-react';
 import { prefersReducedMotion } from '~/a11y';
@@ -23,13 +24,24 @@ const columns: FooterLink[][] = [
     ],
 ];
 
+const isWebKit = () => /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 export function Footer() {
+    const [webkit, setWebkit] = useState(false);
+
+    useEffect(() => {
+        setWebkit(isWebKit());
+    }, []);
+
     const toTop = () => {
         window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
     };
 
+    // footer completely breaks and lags on safari because of https://www2.webkit.org/show_bug.cgi?id=263848
+    // earlier used scaleY but that also broke because of https://www2.webkit.org/show_bug.cgi?id=27684
+    // never again, webkit.
     return (
-        <footer className="footer">
+        <footer className={webkit ? 'footer footerPlain' : 'footer'}>
             <div className="footerTop">
                 <div className="footerBrand">
                     <img src="/brand-assets/vantern-wordmark-white.svg" alt="Vantern" width={157} height={24} />
@@ -61,7 +73,7 @@ export function Footer() {
                     <ArrowUpIcon aria-hidden="true" className="footerIcon" />
                 </button>
             </div>
-            <Gradient />
+            {!webkit && <Gradient />}
         </footer>
     );
 }
