@@ -4,66 +4,31 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-.navBar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    width: 100%;
-    padding-inline: clamp(1.25rem, 4vw, 3rem);
+:has(> .navBar[data-open='true']) {
+    z-index: 50;
 }
 
-.navMark {
-    justify-self: start;
-    display: flex;
-    margin-bottom: 0.5rem;
-    color: var(--color-white);
-    border-radius: 0.25rem;
+html:has(.navBar[data-open='true']) {
+    overflow: hidden;
 }
 
-.navMark svg {
-    width: auto;
-    height: 1.625rem;
+.navButtonIcon line {
+    transform-box: view-box;
+    transform-origin: center;
+    transition: transform 200ms ease-out;
 }
 
-.navMark:focus-visible {
-    outline: 2px solid var(--color-neutral-300);
-    outline-offset: 4px;
+/* for the morph transition, 12 * sqrt(2) / 14 ≈ 1.2122 is the stretch between the x and the = so we must scale it by 1.2122, rotate 45d and move down 3px */
+.navBar[data-open='true'] .navButtonIcon line:first-child {
+    transform: rotate(45deg) scaleX(1.2122) translateY(3px);
 }
 
-.nav {
-    position: relative;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.navLink {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--color-neutral-400);
-    text-decoration: none;
-    transition: color 150ms;
-}
-
-.navLink:hover,
-.navLink.active {
-    color: var(--color-white);
-}
-
-.navUnderline {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: var(--color-white);
-    border-radius: 9999px;
-    pointer-events: none;
-    transition: left 200ms cubic-bezier(0.4, 0, 0.2, 1),
-                width 200ms cubic-bezier(0.4, 0, 0.2, 1);
+.navBar[data-open='true'] .navButtonIcon line:last-child {
+    transform: rotate(-45deg) scaleX(1.2122) translateY(-3px);
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .navUnderline {
+    .navButtonIcon line {
         transition: none;
     }
 }

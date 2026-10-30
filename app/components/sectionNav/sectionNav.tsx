@@ -4,7 +4,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { prefersReducedMotion } from '~/a11y';
-import '../nav/nav.css';
 
 type NavSection = { id: string; label: string };
 
@@ -78,7 +77,7 @@ export function SectionNav({ label, sections, className = '' }: { label: string;
                         ))}
                     </ul>
                     {bar && (
-                        <span aria-hidden="true" className="navUnderline" style={{ left: bar.left, width: bar.width }} />
+                        <span aria-hidden="true" className="pointer-events-none absolute bottom-0 h-0.5 rounded-full bg-white transition-[left,width] duration-200 motion-reduce:transition-none" style={{ left: bar.left, width: bar.width }} />
                     )}
                 </div>
             </div>
