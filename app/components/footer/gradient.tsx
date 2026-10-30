@@ -71,8 +71,8 @@ export function Gradient() {
     }, []);
 
     return (
-        <div ref={bandRef} className="footerGradient" aria-hidden="true">
-            <svg viewBox="0 0 1271 599" preserveAspectRatio="none" fill="none">
+        <div ref={bandRef} className="pointer-events-none fixed inset-x-0 bottom-0 h-(--footer-gradient)" aria-hidden="true">
+            <svg className="absolute bottom-0 left-0 block h-0 w-full" viewBox="0 0 1271 599" preserveAspectRatio="none" fill="none">
                 <defs>
                     <linearGradient id={`grad-${id}`} x1="0" y1="1" x2="0" y2="0">
                         {stops.map(({ offset, color, opacity }) => (
