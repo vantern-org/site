@@ -7,9 +7,10 @@ import { ogImage } from "~/meta";
 
 export function meta() {
   return [
-    { title: "Quest Bot Feedback | Vantern" },
+    { title: "Quest Bot Survey | Vantern" },
     { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
     ...ogImage,
+    { name: "robots", content: "noindex" },
   ];
 }
 
