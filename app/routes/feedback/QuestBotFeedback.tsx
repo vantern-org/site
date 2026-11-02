@@ -10,6 +10,7 @@ export function meta() {
     { title: "Quest Bot Feedback | Vantern" },
     { name: "description", content: "Share your feedback on Quest Bot to help us improve." },
     ...ogImage,
+    { name: "robots", content: "noindex" },
   ];
 }
 

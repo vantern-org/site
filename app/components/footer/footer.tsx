@@ -19,7 +19,7 @@ const columns: FooterLink[][] = [
     [
         { label: 'Home', to: '/' },
         { label: 'Brand kit', to: '/brand' },
-        { label: 'Status', to: 'https://vantern.statuspage.io/', external: true },
+        { label: 'Status', to: 'https://status.vantern.org/', external: true },
     ],
 ];
 
