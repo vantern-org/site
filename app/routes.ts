@@ -20,6 +20,7 @@ export default [
     route("sponsor", "routes/sponsor/sponsor.tsx"),
     route("sponsors", "routes/redirect.tsx", { id: "redirect-sponsors" }),
     route("brand", "routes/brand/brand.tsx"),
+    route("team", "routes/team/team.tsx"),
     route("discord", "routes/redirect.tsx", { id: "redirect-discord" }),
     route("dc", "routes/redirect.tsx", { id: "redirect-dc" }),
     route("*", "routes/$.tsx"),

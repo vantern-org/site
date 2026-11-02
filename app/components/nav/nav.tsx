@@ -9,6 +9,7 @@ import './nav.css';
 
 const links = [
     { label: 'Home', to: '/' },
+    { label: 'Team', to: '/team' },
     { label: 'GitHub', to: '/github' },
     { label: 'Quest', to: '/bot/invite' },
 ];
