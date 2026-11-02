@@ -50,9 +50,9 @@ export default function Sponsor() {
 
   return (
     <div className="relative flex flex-col flex-1">
-      <header className="relative z-10 flex flex-col items-center pt-6 px-4">
+      <header className="relative z-10 flex flex-col items-center pt-6">
         <Nav />
-        <div className="flex flex-col items-center gap-4 pt-20 pb-24 max-w-xl text-center">
+        <div className="flex flex-col items-center gap-4 px-4 pt-20 pb-24 max-w-xl text-center">
           <h1 className="text-h1 text-white">Sponsor</h1>
           <p className="text-body-lg sm:text-lead text-vantern-300">
             Vantern is owned and maintained by{" "}

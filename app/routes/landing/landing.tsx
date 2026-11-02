@@ -3,10 +3,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { useEffect, useRef, useState, type RefObject } from "react";
-import { animate, stagger } from "animejs";
+import { Link } from "react-router";
 import { Nav } from "~/components/nav/nav";
 import { Footer } from "~/components/footer/footer";
 import { focusRing, prefersReducedMotion } from "~/a11y";
+import { useRise } from "~/rise";
 import "./landing.css";
 
 declare module "react" {
@@ -20,7 +21,9 @@ declare module "react" {
 type StorySegment = string | { text: string; href: string };
 
 const storyText: StorySegment[][] = [
-  ["Vantern is a small team of developers and a ",
+  ["Vantern is a small ",
+  { text: "team of developers", href: "/team" },
+  " and a ",
   { text: "security researcher", href: "https://jvr2022.tech"},
   "."
   ],
@@ -32,7 +35,12 @@ function StoryWords({ text, href }: { text: string; href?: string }) {
   const words = text.match(/\s*\S+\s*/g)?.map((word, i) => (
     <span key={i} className="storyWord">{word}</span>
   ));
-  return href ? <a href={href} target="_blank" rel="noreferrer" className={`storyLink ${focusRing}`}>{words}</a> : words;
+  // internal links are opened same tab
+  if (!href) return words;
+  const className = `storyLink ${focusRing}`;
+  return href.startsWith("/")
+    ? <Link to={href} className={className}>{words}</Link>
+    : <a href={href} target="_blank" rel="noreferrer" className={className}>{words}</a>;
 }
 
 function useScrollFrame<T extends HTMLElement>(ref: RefObject<T | null>, setup: (el: T) => () => void) {
@@ -100,26 +108,7 @@ export function Landing() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const [playing, setPlaying] = useState(false);
 
-  useEffect(() => {
-    const title = titleRef.current;
-    if (!title || prefersReducedMotion()) return;
-    let rise: ReturnType<typeof animate> | undefined;
-    let cancelled = false;
-    document.fonts.ready.then(() => {
-      if (cancelled) return;
-      rise = animate(Array.from(title.children), {
-        opacity: [0, 1],
-        translateY: [48, 0],
-        duration: 1800,
-        ease: "outExpo",
-        delay: stagger(140, { start: 150 }),
-      });
-    });
-    return () => {
-      cancelled = true;
-      rise?.revert();
-    };
-  }, []);
+  useRise(titleRef);
 
   useScrollFrame(heroRef, hero => () => {
     const y = Math.min(window.scrollY, window.innerHeight * 1.5);

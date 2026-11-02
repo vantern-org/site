@@ -279,7 +279,7 @@ function ColorRamp() {
             type="button"
             onClick={() => copy(i, step, hex)}
             aria-label={`Copy vantern-${step}, ${hex}`}
-            className={`rampBand transition-[filter] duration-300 ease-out motion-reduce:transition-none group-hover/ramp:not-[&:hover]:blur-sm group-has-focus-visible/ramp:not-focus-visible:blur-sm relative flex flex-1 cursor-pointer items-center justify-between px-4 py-3.5 text-left focus-visible:outline-2 focus-visible:outline-offset-[-4px] lg:h-72 lg:flex-col lg:items-start lg:justify-end lg:gap-1 lg:px-3 lg:py-4 ${Number(step) < 500 ? "text-vantern-950 focus-visible:outline-vantern-950" : "text-white focus-visible:outline-white"}`}
+            className={`rampBand transition-[filter] duration-300 ease-out motion-reduce:transition-none group-hover/ramp:not-[&:hover]:blur-sm group-has-focus-visible/ramp:not-focus-visible:blur-sm relative flex flex-1 cursor-pointer items-center justify-between px-4 py-3.5 text-left focus-visible:outline-2 focus-visible:outline-offset-4 lg:h-72 lg:flex-col lg:items-start lg:justify-end lg:gap-1 lg:px-3 lg:py-4 ${Number(step) < 500 ? "text-vantern-950 focus-visible:outline-vantern-950" : "text-white focus-visible:outline-white"}`}
             style={{ backgroundColor: hex, boxShadow: `var(--seam) ${hex}, var(--layer)`, zIndex: i + 1 }}
           >
             <span className="rampStep flex items-baseline gap-2 lg:flex-col lg:gap-0.5">
@@ -329,7 +329,7 @@ export default function Brand() {
 
   return (
     <div ref={root} className="relative flex flex-col flex-1">
-      <header className="relative z-10 flex flex-col items-center pt-6 gap-4 px-4">
+      <header className="relative z-10 flex flex-col items-center pt-6 gap-4">
         <Nav />
         <div className="pt-12">
           <img src="/logo.svg" alt="" className="h-20 w-auto" />
